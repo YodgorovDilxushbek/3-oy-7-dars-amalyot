@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.wrapper{
+    padding: 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+#check{
+appearance:none;
+width: 80px;
+height: 40px;
+background-color: gray;
+border-radius: 20px;
+position: relative;
+
+}
+#check:checked{
+    background-color: blue;
+}
+#check::before{
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.5s;
+
+}
+#check:checked::before{
+   
+    left: 41px;
+    background-color:red;
+}
+
+
+
+
+
+
+#check2{
+    appearance:none;
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-radius: 0px;
+    position: relative;
+    
+    }
+    #check2:checked{
+        background-color: blue;
+    }
+    #check2::before{
+        content: "";
+        width: 36px;
+        height: 36px;
+        background-color: #fff;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: all 0.5s;
+    
+    }
+    #check2:checked::before{
+    
+        top: 41px;
+        left: 41px;
+    }
+.mask1 {
+   -webkit-mask-image: url(../images/joystic.png);
+   
+   mask-image: url(../images/joystic.png);
+   mask-repeat: no-repeat;  
+   
+  }
+  .video__end__audio h2{
+    font-size: 70px;
+    color: rgb(226, 207, 32);
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .audio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+.text__overflow p{
+width: 400px;
+background-color: aqua;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 5;
+
+overflow: hidden;
+text-overflow: hidden;
+}
+
+.text__overflow2 p{
+    width: 400px;
+    background-color: aqua;
+   white-space: nowrap;
+
+    
+    overflow: hidden;
+    text-overflow: hidden;
+    }
+    
+.text{
+    display: flex;
+    gap: 100px;
+
+}
